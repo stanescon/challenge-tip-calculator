@@ -165,6 +165,7 @@ header {
         display: flex;
         flex-direction: column;
         width: 350px;
+        padding: 20px;
     }
     .erro {
         left: 186px;

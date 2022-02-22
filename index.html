@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./reset.css">
+  <link rel="stylesheet" href="./style.css">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="./images/logo.svg" alt="Logotipo" class="logo">
+  </header>
+  <main>
+    <div class="calculadora">
+      <div class="informacoes">
+
+        <label for="valor-conta">Bill</label>
+        <input type="number" id="valor-conta" class="input-padrao" required placeholder="0">
+        <img src="./images/icon-dollar.svg" class="icon-dollar">
+  
+        <p class="titulo-botoes-porcentagem">Select Tip %</p>
+        <div class="botoes-porcentagem">
+          <button class="botao-porcentagem">5%</button>
+          <button class="botao-porcentagem">10%</button>
+          <button class="botao-porcentagem">15%</button>
+          <button class="botao-porcentagem">25%</button>
+          <button class="botao-porcentagem">50%</button>
+          <input type="number" id="porcentagem-customizada" class="porcentagem-centralizada" placeholder="Custom">
+        </div>
+  
+        <label for="numero-pessoas">Number of People</label> 
+        <input type="number" id="numero-pessoas" class="input-padrao" placeholder="0"> 
+        <img src="./images/icon-person.svg" class="icon-pessoa">
+        <p class="erro oculto">Can't be zero</p>
+      </div>
+
+      <div class="painel">
+        <div>
+          <p class="por-pessoa">Tip Amount</p>
+          <p>/ person</p>
+        </div>
+        <p class="valor valor-gorjeta-pessoa">$0.00</p>
+        <div>
+          <p class="por-pessoa">Total</p>
+          <p>/ person</p>
+        </div>
+        <p class="valor valor-total-pessoa">$0.00</p>
+  
+        <button class="botao-resete">RESET</button>
+
+      </div>
+
+    </div>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Natália Jordana</a>.
+    </div>
+  </main>
+
+<script src="./script.js"></script>
+</body>
+</html>

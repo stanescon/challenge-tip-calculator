@@ -1,0 +1,156 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Space Mono', monospace, sans-serif;
+    background-color: hsl(185, 41%, 84%);
+}
+header {
+    display: flex;
+    justify-content: center;
+}
+.logo {
+    margin: 150px 0 70px 0;
+}
+.calculadora {
+    width: 60%;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.informacoes {
+    position: relative;
+}
+.informacoes:first-child{
+    font-weight: bold;
+    color: hsl(184, 14%, 56%);
+}
+.input-padrao {
+    display: block;
+    margin-top: 15px;
+    background-color: hsl(189, 41%, 97%);
+    color: hsl(183, 100%, 15%);
+    border: none;
+    font-size: 1.5rem;
+    padding: 10px;
+    font-weight: bold;
+    font-family: 'Space Mono', monospace;
+    width: 100%;
+    text-align: right;
+}
+.input-padrao:focus {       
+     box-shadow: 0 0 0 0;    
+     outline: 0; 
+     border: 2px solid #2ac1ac;            
+}                          
+.erro {
+    position: absolute;
+    top: 320px;
+    left: 237px;
+    color: #d17f66;
+}
+.oculto {
+    display: none;
+}
+.icon-dollar {
+    width: 16px;
+    position: absolute;
+    top: 48px;
+    left: 10px;
+}
+.icon-pessoa {
+    width: 16px;
+    position: relative;
+    top: -39px;
+    left: 10px;
+}
+.botoes-porcentagem {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+.titulo-botoes-porcentagem{
+    margin: 35px 0 15px 0;
+    color: hsl(184, 14%, 56%);
+    font-weight: bold;
+}
+.botao-porcentagem {
+    background: hsl(183, 100%, 15%);
+    color: #FFFFFF;
+    padding: 10px;
+    font-size: 1.5rem;
+    font-family: 'Space Mono', monospace;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+}
+.botao-porcentagem:active {
+    background-color: #9fe8df;
+    color: hsl(183, 100%, 15%);
+}
+.botoes-porcentagem input {
+    border-radius: 10px;
+    border: none;
+    background-color: hsl(189, 41%, 97%);
+    color: hsl(184, 14%, 56%);
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Space Mono', monospace;
+    font-weight: bold;
+    width: 124px;
+}
+.painel {
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 10px;
+    padding: 35px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    line-height: 1.5rem;
+}
+.botao-resete {
+    grid-column: span 2;
+    margin: 50px 0 10px 0;
+    background-color: #0d686d;
+    border-radius: 10px;
+    border: none;
+    color: hsl(183, 100%, 15%);
+    font-size: 1.5rem;
+    font-family: 'Space Mono', monospace;
+    font-weight: bold;
+}
+.valor {
+    color: #2ac1ac;
+    font-weight: bold;
+    font-size: 3rem;
+}
+.por-pessoa {
+    color: #FFFFFF;
+    font-weight: bold;
+}
+.por-pessoa + p {
+    color: hsl(184, 14%, 56%);
+    font-weight: bold;
+}
+.botao-activo {
+    background-color: #2ac1ac;
+    color: hsl(183, 100%, 15%);
+}
+.mensagem-erro, .mensagem-erro:focus {
+    border: 2px solid #d17f66;
+}
+.resete-activo {
+    background-color: #2ac1ac;
+}
+.botao-resete:active {
+    background-color: #9fe8df;
+}
+
+

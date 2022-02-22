@@ -87,8 +87,15 @@ inputNumeroPessoas.addEventListener('keyup', function(event) {
         }
 
     } else {
+        if(numeroPessoas === 0) {
+            document.querySelector('#numero-pessoas').classList.add('mensagem-erro');
+            document.querySelector('.erro').classList.remove('oculto')
+            resultado1.innerHTML = '$' + '0.00';
+            resultado2.innerHTML = '$' + '0.00';
+        } else {
         resultado1.innerHTML = '$' + '0.00';
         resultado2.innerHTML = '$' + '0.00';
+        }
     }
 })
 

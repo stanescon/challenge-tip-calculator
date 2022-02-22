@@ -152,5 +152,25 @@ header {
 .botao-resete:active {
     background-color: #9fe8df;
 }
+.attribution {
+    margin: 10px;
+}
 
 
+
+/* MOBILE */
+
+@media screen and (max-width: 1420px) {
+    .calculadora {
+        display: flex;
+        flex-direction: column;
+        width: 350px;
+    }
+    .erro {
+        left: 186px;
+
+    }
+    .logo {
+        margin: 70px 0;
+    }
+}

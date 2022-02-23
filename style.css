@@ -91,7 +91,7 @@ header {
     border-radius: 10px;
     border: none;
 }
-.botao-porcentagem:active {
+.botao-porcentagem:hover {
     background-color: #9fe8df;
     color: hsl(183, 100%, 15%);
 }
